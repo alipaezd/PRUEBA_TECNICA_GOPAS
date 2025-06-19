@@ -1,0 +1,3 @@
+perro_infelices.txt - 8 lineas 
+
+  Total de archivos procesados: 2
