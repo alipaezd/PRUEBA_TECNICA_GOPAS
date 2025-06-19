@@ -4,20 +4,20 @@
     Ejecutar:
     python app/automatizacion_archivos.py
 ## 2. PostgreSQL y Python
-    Levantemos el entorno:
+    ## Levantemos el entorno:
         docker-compose up --build -d
-    Miramos los logs para ver la ejecucion incial del slq:
+    ## Miramos los logs para ver la ejecucion incial del slq:
         docker logs -f postgres_db  
-    Para correr el python base_datos_postgres:
+    ## Para correr el python base_datos_postgres:
         -entramos al bash linux:
          docker exec -it prueba_tecnica_gopas-app-1 bash
         - ya dentro  ejecutamos :
             python /app/app/base_datos_postgres.py  
 
 ## 3. Administración Linux
- Entramos al bash 
+ ## Entramos al bash 
   -docker exec -it prueba_tecnica_gopas-app-1 bash
- Correr el script:
+ ## Correr el script:
    ./app/scripts/respaldo.sh
 
 ## RESPUESTAS ENUNCIADO 
@@ -25,6 +25,7 @@
 Enunciado:
 1. Responde brevemente cómo realizarías las siguientes acciones (no es necesario ejecutarlas):
 - Ver los 5 procesos que más memoria consumen.
+
 ps aux --sort=-%mem | head -n 5
 
 ps aux: lista todos los procesos
